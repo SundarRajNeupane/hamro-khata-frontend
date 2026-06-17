@@ -778,7 +778,7 @@ export default function HamroKhata() {
   const showNav = screen !== "custDetail";
 
   return (
-    <div style={{ maxWidth: "420px", margin: "0 auto", display: "flex", flexDirection: "column", minHeight: "720px", background: "var(--color-background-tertiary)", position: "relative", border: "0.5px solid var(--color-border-tertiary)", borderRadius: "var(--border-radius-lg)", overflow: "hidden" }}>
+    <div style={{ maxWidth: "480px", margin: "0 auto", display: "flex", flexDirection: "column", height: "100dvh", background: "var(--color-background-primary)", position: "relative", overflow: "hidden" }}>
       <h2 className="sr-only">Hamro Khata — Digital Business Ledger for Nepal</h2>
       <div style={{ flex: 1, overflowY: "auto" }}>{(SCREENS[screen] || homeScreen)()}</div>
       {showNav && (
